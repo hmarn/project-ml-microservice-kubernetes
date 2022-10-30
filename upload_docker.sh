@@ -10,7 +10,7 @@ dockerpath=haymarnhm/ml-microservice:v1.0.0
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login
 
 # Step 3:
-docker login
 docker push haymarnhm/ml-microservice:v1.0.0 
