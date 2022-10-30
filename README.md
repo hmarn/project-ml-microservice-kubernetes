@@ -1,4 +1,7 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hmarn/project-ml-microservice-kubernetes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/hmarn/project-ml-microservice-kubernetes/tree/main)
+
+## Operationalize a Machine Learning Microservice API
+Udacity Cloud DevOps - Microservices at Scaling using AWS & Kubernetes
 
 ## Project Overview
 
