@@ -4,6 +4,82 @@
 Udacity Cloud DevOps - Microservices at Scaling using AWS & Kubernetes
 
 ## Project Overview
+The project uses a pre-trained, `sklearn` model with Python flask app to operationalize a Machine Learning Microservice API.
+
+And, covers the following tasks:
+
+- Test project code using linting
+- Complete a Dockerfile to containerize this application
+- Deploy containerized application using Docker and make a prediction
+- Improve the log statements in the source code for this application
+- Configure Kubernetes and create a Kubernetes cluster
+- Deploy a container using Kubernetes and make a prediction
+- Upload a complete Github repo with CircleCI to indicate that your code has been tested
+
+
+## How to run
+- Building a virtual environment 
+
+```bash
+python3 -m venv ~/.devops
+source ~/.devops/bin/activate
+```
+
+- Completing docker file using lint test
+
+```bash
+cat Dockerfile
+cat Makefile
+make install
+make lint
+```
+
+- Running Docker container and call prediction API
+
+```bash
+./run_docket.sh
+```
+
+```bash
+# Open new terminal, call to prediction API
+./make_prediction.sh
+# Output logs are pasted in `docker_out.txt`
+```
+
+- See logs from prediction API
+
+```bash
+cat docker_out.txt
+```
+
+- Uploading Docker image
+
+```bash
+./upload_docker.sh
+```
+
+- Configuring Kubernetes
+
+```bash
+minikube start
+kubectl config view
+```
+
+- Deploying with kubernetes
+
+```bash
+./run_kubernetes.sh
+```
+
+```bash
+# Open new terminal, call to prediction API
+./make_prediction.sh
+# Output logs are pasted in `kubernetes_out.txt`
+```
+
+- Integrated on CircleCI and status badge is added.
+
+---
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
 
