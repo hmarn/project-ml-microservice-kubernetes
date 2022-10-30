@@ -20,3 +20,10 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 kubectl port-forward ml-microservice --address 0.0.0.0 8000:80
+kubectl logs -f ml-microservice
+
+# Develoepr Notes: 
+# Required to rerun `kubectl port-forward` once pod is running status.
+# To expose port and see logs.
+# So that, I rerun the `.run_kubernetes.sh`
+# Then in new tab, run `./make_prediction.sh`
